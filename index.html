@@ -2,16 +2,30 @@
 <html>
 <head>
 <style>
-body {
-    background-color: lightblue;
-}
-</style>
-</head>
-<body>
+div {
+    width: 200px
+    height: 200px
+    background-color: purple
+    -webkit-animation-name: example; /* safari 4.0 - 8.0 */
+    -webkit-animation-duration: 10s; /* safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 10s;
+    }
+/* safari 4.0 - 8.0 */
+@-webkit-keyframes {
+    from {background-color: purple;}
+    to {background-color: black;}
+    }
+/* standard syntax */
+    keyframes example {
+        from {background-color: purple;}
+        to {background-color: black;}
+    }        
 <h1 {
      color: purple;
 }
 <h1>COLUP</h1>
-
-</body>
+</style>
+</head>
+<body>
 </html>
